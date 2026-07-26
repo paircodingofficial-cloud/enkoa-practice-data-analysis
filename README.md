@@ -8,7 +8,7 @@
 | 일차 | 주제 | 배우는 것 |
 |---|---|---|
 | **day06** | 판다스 기초 | DataFrame 조회·선택·정렬, 결측치·이상치, 형변환·문자열, 파생 변수 |
-| **day07** | EDA·시각화 | 결합(merge·concat)·집계(groupby·pivot_table), Matplotlib·Seaborn 유형별 그래프 |
+| **day07** | EDA·시각화 | 결합(merge·concat)·집계(groupby·pivot_table·사용자 정의 집계), Matplotlib·Seaborn 유형별 그래프 |
 | **day08** | 기술통계·추론통계 | 대푯값·산포·상관, 확률분포, 표본분포·신뢰구간·p-value |
 
 ---
