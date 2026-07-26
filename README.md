@@ -3,6 +3,14 @@
 엔코아 AI캠퍼스 「데이터 분석 & AI 머신러닝 캠프」 **데이터 분석(pandas)** 실습용 주피터 노트북입니다.
 수업 진도에 맞춰 자료가 추가됩니다.
 
+### 수록 자료
+
+| 일차 | 주제 | 배우는 것 |
+|---|---|---|
+| **day06** | 판다스 기초 | DataFrame 조회·선택·정렬, 결측치·이상치, 형변환·문자열, 파생 변수 |
+| **day07** | EDA·시각화 | 결합(merge·concat)·집계(groupby·pivot_table), Matplotlib·Seaborn 유형별 그래프 |
+| **day08** | 기술통계·추론통계 | 대푯값·산포·상관, 확률분포, 표본분포·신뢰구간·p-value |
+
 ---
 
 ## ⚠️ 딱 하나만 기억하세요
@@ -44,6 +52,7 @@ uv sync
 | **pandas** | 표(DataFrame) 데이터 분석의 핵심 |
 | **numpy** | 수치 계산 (pandas 의 토대) |
 | **matplotlib** · **seaborn** | 그래프·시각화 |
+| **scipy** | 통계 계산 (정규분포·신뢰구간 등) |
 | **openpyxl** | 엑셀(.xlsx) 읽기·쓰기 |
 | **jupyterlab** · **ipykernel** | 주피터 노트북 실행 |
 
@@ -66,14 +75,17 @@ uv add pandas matplotlib   # 여러 개도 한 번에
 오늘 자료를 `내작업/` 으로 **복사한 뒤** 복사본을 열어 작업합니다.
 
 ```bash
-# (다른 터미널에서) 오늘 자료를 내작업으로 복사
-mkdir -p 내작업/day06
-cp day06_판다스_기초/*.ipynb 내작업/day06/
-cp -r day06_판다스_기초/data 내작업/day06/
+# (다른 터미널에서) 오늘 자료를 내작업으로 복사 — day08 이라면
+mkdir -p 내작업/day08
+cp day08_기술통계_추론통계/*.ipynb 내작업/day08/
+cp -r day08_기술통계_추론통계/data day08_기술통계_추론통계/images 내작업/day08/
 ```
 
-> Windows: `mkdir 내작업\day06` → `copy day06_판다스_기초\*.ipynb 내작업\day06\`
+> Windows: `mkdir 내작업\day08` → `copy day08_기술통계_추론통계\*.ipynb 내작업\day08\`
 > 파일 탐색기에서 끌어다 복사해도 똑같습니다.
+>
+> **`data/` 와 `images/` 도 함께 복사하세요.** 노트북이 `data/` 에서 CSV 를 읽고,
+> 설명 그림을 `images/` 에서 불러옵니다 — 빠뜨리면 표가 안 열리거나 그림이 깨집니다.
 
 ---
 
@@ -109,9 +121,13 @@ uv run 업데이트.py
 enkoa-practice-data-analysis/
 ├── pyproject.toml · uv.lock   ← 환경 정의 (uv sync 가 이걸 읽어 설치)
 ├── day06_판다스_기초/          ← 배포 원본 (읽기 전용)
+├── day07_EDA_시각화/
+├── day08_기술통계_추론통계/
 │   ├── 교안_01, 교안_02        수업 중 함께 진행
 │   ├── 과제_LV1 / LV2 / LV3    기초 · 응용 · 통합
-│   └── data/                  실습용 CSV
+│   ├── 실습_가이드.md           그날의 진행 체크리스트
+│   ├── data/                  실습용 CSV
+│   └── images/                교안에 들어가는 설명 그림
 ├── 내작업/                    ← 여기서 실습 (GitHub 에 안 올라감)
 └── 업데이트.py                ← git pull 이 막혔을 때만
 ```

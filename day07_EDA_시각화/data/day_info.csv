@@ -1,0 +1,5 @@
+day,is_weekend,sort_order
+Sun,True,4
+Sat,True,3
+Thur,False,1
+Fri,False,2
