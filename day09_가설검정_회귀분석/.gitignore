@@ -1,0 +1,14 @@
+# 가상환경·캐시
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# 에이전트 작업 상태
+.omc/
+
+# 실행 산출물 (savefig·CSV 저장 등 노트북이 만드는 파일)
+output/
+
+# macOS
+.DS_Store
