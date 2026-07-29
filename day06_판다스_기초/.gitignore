@@ -1,0 +1,12 @@
+# 가상환경·캐시
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.omc/
+
+# 실행 산출물 (노트북이 저장하는 파일)
+output/
+
+# macOS
+.DS_Store
