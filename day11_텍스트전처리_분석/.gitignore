@@ -6,6 +6,7 @@ __pycache__/
 
 # 에이전트 작업 상태
 .omc/
+.concept-work/
 
 # 실행 산출물 (savefig·CSV 저장 등 노트북이 만드는 파일)
 output/
