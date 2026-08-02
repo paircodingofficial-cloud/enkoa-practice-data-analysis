@@ -1,0 +1,20 @@
+# API 키 (실습_가이드 안내대로 이 폴더에 만들 수 있음 - 절대 커밋 금지)
+.env
+
+# 가상환경·캐시
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# 에이전트 작업 상태
+.omc/
+
+# 실행 산출물 (savefig·CSV 저장 등 노트북이 만드는 파일)
+output/
+
+# 채점 골든값(작성용 내부 파일)
+data/.golden.json
+
+# macOS
+.DS_Store
